@@ -30,8 +30,16 @@ nav ul {
 
 button {
     padding: 10px;
-    border-radius: 10px;
+    font-size: 15px;
+    width: 160px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 20px;
     background-image: linear-gradient(to left, #3687a7, #24a058, #1758e2);
+    box-shadow: 5px 5px 10px grey;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 div {
@@ -68,6 +76,8 @@ form input[type=password] {
     padding-left: 10px;
     margin: 10px 0;
     border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px grey;
 }
 
 form input[type=submit] {
@@ -76,4 +86,7 @@ form input[type=submit] {
     cursor: pointer;
     background-image: linear-gradient(to left, #3687a7, #24a058, #1758e2);
     border-radius: 20px;
+    box-shadow: 5px 5px 10px grey;
+    color: white;
+    border: none;
 }
