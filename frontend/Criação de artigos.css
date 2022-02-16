@@ -1,0 +1,107 @@
+body{
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    cursor: pointer;
+}
+
+h1{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 70px;
+    font-weight: normal;
+    text-shadow: 20px 20px 30px rgb(126, 126, 126);
+}
+
+form{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 40%;
+}
+
+.menu-superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+.caixa-de-texto{
+    background-color: rgb(220, 220, 220);
+    border-radius: 20px;
+    border: none;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 70%;
+    min-height: 40px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.botao-2-em-1-child{
+    color: white;
+    font-size: 15px;
+}
+
+#botao-home{
+    color: black;
+    font-size: 30px;
+    font-weight: normal;
+    display: block;
+    margin-left: 4%;
+    width: 160px;
+    text-shadow: 20px 20px 30px rgb(126, 126, 126);
+}
+
+#botao-2-em-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    margin-right: 4%;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, #3687a7, #24a058, #1758e2);
+    box-shadow: 5px 5px 10px grey;
+}
+
+#botao-enviar{
+    font-size: 15px;
+    width: 160px;
+    height: 40px;
+    margin: 10px;
+    background-image: linear-gradient(to left, #3687a7, #24a058, #1758e2);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#input-conteudo-artigo{
+    height: 60%;
+    }
