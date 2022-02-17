@@ -16,15 +16,16 @@
     </nav>
         <h1>Cadastre-se</h1>
         <div class="cadastro">
-            <form>
-                <input type="email" name="" placeholder="E-mail">
-                <input type="text" name="" placeholder="Usuário">
-                <input type="password" name="" placeholder="Senha">
-                <input type="submit" name="" value="Confirmar"
+            <form name="formuser">
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="text" name="usuario" placeholder="Usuário">
+                <input type="password" name="senha" placeholder="Senha">
+                <input type="submit" name="" value="Confirmar" onclick="return validar()">
             </form>
         </div>
     <div>
         <img src="../img/cripto-img.png">
     </div>
+    <script src="../js/cadastro.js"></script>
 </body>
 </html>

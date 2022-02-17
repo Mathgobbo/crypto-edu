@@ -16,14 +16,15 @@
     </nav>
         <h1>Login</h1>
         <div class="login">
-            <form>
-                <input type="text" name="" placeholder="Usuário">
-                <input type="password" name="" placeholder="Senha">
-                <input type="submit" name="" value="Entrar"
+            <form name="formuser">
+                <input type="text" name="usuario" placeholder="Usuário">
+                <input type="password" name="senha" placeholder="Senha">
+                <input type="submit" name="" value="Entrar" onclick="return validar()">
             </form>
         </div>
     <div class="imagem">
         <img src="../img/cripto-img.png">
     </div>
+    <script src="../js/login.js"></script>
 </body>
 </html>
