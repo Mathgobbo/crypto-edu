@@ -4,10 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Cripto Edu</title>
   </head>
   <body>
-    <h1>Fala meus Bom</h1>
-    <h2>Eh os guri</h2>
+    <header>
+      <h1>CriptoEdu</h1>
+      <div>
+        <button id="signin">Entrar</button>
+        <button id="signup">Cadastre-se</button>
+      </div>
+    </header>
+    <main>
+      <!-- Main Section -->
+      <section id="headline">
+        <h1>
+          Conhecimento como você nunca viu. <br />
+          Aprenda sobre <span>Web 3.0</span>
+        </h1>
+        <img src="../img/cripto-img.png" />
+      </section>
+
+      <!-- Categories -->
+      <section id="categories">
+        <button id="blockchain">
+          <img src="../img/icons/blockchain.svg" />
+          <span>Blockchain</span>
+        </button>
+        <button id="ethereum">
+          <img src="../img/icons/ethereum.svg" />
+          <span>Ethereum</span>
+        </button>
+        <button id="solana">
+          <img src="../img/icons/solana.svg" />
+          <span>Solana</span>
+        </button>
+      </section>
+
+      <!-- Articles -->
+      <section>
+        <div>
+          <h2>Artigos</h2>
+          <div>
+            <img src="../img/icons/search.svg" />
+            <input type="text" />
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <img src="../img/article-example.svg" />
+            <div>
+              <h3>Web 3.0: Por onde Começar</h3>
+              <div>
+                <div>
+                  <img src="../img/avatar-example.png" />
+                  <p>Matheus Gobbo Bernardi</p>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in elit laoreet, posuere nisi id,
+              porta nisi. Praesent ut faucibus dui.
+            </p>
+            <a>Ler mais</a>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

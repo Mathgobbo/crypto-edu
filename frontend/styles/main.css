@@ -1,0 +1,86 @@
+* {
+  font-family: sans-serif;
+}
+
+/* Shared */
+
+main {
+  padding: 0 4rem;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+header button#signin {
+  border: 2px solid #282828;
+}
+
+header button#signup {
+  background: linear-gradient(to right, #5bc172, #4793ca);
+  color: #fff;
+  padding: 0.7rem 2rem;
+}
+
+/* Headline */
+main #headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #headline h1 {
+  font-size: 3rem;
+}
+
+main #headline h1 span {
+  font-size: 3.2rem;
+  background: linear-gradient(to right, #5bc172, #4793ca);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Categories */
+main #categories {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main #categories img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+main #categories button {
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  margin: 0 0.7rem;
+}
+
+main #categories #blockchain {
+  background: linear-gradient(to right, #5bc172, #4793ca);
+}
+main #categories #ethereum {
+  background: linear-gradient(to right, #db6d4b, #f85050);
+}
+
+main #categories #solana {
+  background: linear-gradient(to right, #9046ee, #ff8cd1);
+}
