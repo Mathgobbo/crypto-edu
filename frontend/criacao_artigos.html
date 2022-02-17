@@ -25,13 +25,15 @@
     
     <!-- formulário -->
     <form action="">
+        <span id="span-titulo"></span>
         <input 
             class="caixa-de-texto"; 
             type="text";
             id="input-titulo-artigo";
             placeholder="Título do artigo";
-            required>
+            required;>
 
+        <span id="span-texto"></span>
         <textarea
             name="conteudo-artigo";
             class="caixa-de-texto";
@@ -39,16 +41,16 @@
             cols="30";
             rows="10";
             placeholder="Escreva seu artigo";
-            required>
+            required;>
         </textarea>
         
-        <button id="botao-enviar">Enviar</button>
+        <button id="botao-enviar"; type="submit">Enviar</button>
     </form>
 
     <!-- imagem -->
     <img src="../img/cripto-img.png" alt="Imagem não encontrada">
 
 
-    <script src="../js/validacao_formulario_artigo.js"></script>
+    <script src="../js/criacao_artigos.js"></script>
 </body>
 </html>
