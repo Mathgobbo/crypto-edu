@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/Criação de artigos.css" />
+  </head>
+  <body>
+    <!-- menu superior -->
+    <div class="menu-superior">
+      <a id="botao-home">CriptoEdu</a>
+      <div id="botao-2-em-1">
+        <a class="botao-2-em-1-child">FulanoDeTal</a>
+        <p class="botao-2-em-1-child">|</p>
+        <a class="botao-2-em-1-child">Sair</a>
+      </div>
+    </div>
+
+    <!-- título -->
+    <h1>Criação de Artigo</h1>
+
+    <!-- formulário -->
+    <form action="/api/artigo" method="post">
+      <input
+        class="caixa-de-texto"
+        ;
+        type="text"
+        ;
+        id="input-titulo-artigo"
+        ;
+        placeholder="Título do artigo"
+        ;
+        required
+      />
+
+      <textarea
+        name="conteudo-artigo"
+        ;
+        class="caixa-de-texto"
+        ;
+        id="input-conteudo-artigo"
+        ;
+        cols="30"
+        ;
+        rows="10"
+        ;
+        placeholder="Escreva seu artigo"
+        ;
+        required
+      >
+      </textarea>
+      <button id="botao-enviar">Enviar</button>
+    </form>
+
+    <!-- imagem -->
+    <img src="../img/cripto-img.png" alt="Imagem não encontrada" />
+
+    <script src="../js/validacao_formulario_artigo.js"></script>
+    <script>
+      document.querySelector("form").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const response = await fetch("/api/artigo", { method: "post" });
+        const json = await response.json();
+
+        //Mostra mensagem de sucesso
+      });
+    </script>
+  </body>
+</html>

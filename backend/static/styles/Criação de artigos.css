@@ -1,0 +1,169 @@
+body{
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    cursor: pointer;
+}
+
+/* menu superior */
+
+.menu-superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+@media screen and (max-width:500px){
+    .menu-superior{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+/* "botão" home (CriptoEdu) */
+
+#botao-home{
+    color: black;
+    font-size: 30px;
+    font-weight: normal;
+    display: block;
+    margin-left: 4%;
+    width: 160px;
+    text-shadow: 20px 20px 30px rgb(126, 126, 126);
+}
+
+@media screen and (max-width:500px){
+    #botao-home{
+        font-size: 25px;
+        font-weight: bold;
+        width: 40%;
+    }
+}
+
+/* "botão" 2 em 1 (usuário/sair) */
+
+#botao-2-em-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    margin-right: 4%;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, #3687a7, #24a058, #1758e2);
+    box-shadow: 5px 5px 10px grey;
+}
+
+@media screen and (max-width:500px){
+    #botao-2-em-1{
+        width: 40%;
+    }
+}
+
+/* elementos filhos do "botão" 2 em 1 (usuário/sair) */
+
+.botao-2-em-1-child{
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width:500px){
+    .botao-2-em-1-child{
+        font-size: 13px;
+    }
+}
+
+/* título */
+
+h1{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 70px;
+    font-weight: normal;
+    text-shadow: 20px 20px 30px rgb(126, 126, 126);
+}
+
+@media screen and (max-width:500px){
+    h1{
+        margin-bottom: 15%;
+        font-size: 30px;
+    }   
+}
+
+/* formulário */
+
+form{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* caixas de texto */
+
+.caixa-de-texto{
+    background-color: rgb(220, 220, 220);
+    border-radius: 20px;
+    border: none;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 70%;
+    min-height: 40px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px grey;
+    outline: none;
+}
+
+/* botão de envio de formulário */
+
+#botao-enviar{
+    font-size: 15px;
+    width: 160px;
+    height: 40px;
+    margin: 10px;
+    background-image: linear-gradient(to left, #3687a7, #24a058, #1758e2);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* input de conteudo do artigo */
+
+#input-conteudo-artigo{
+    height: 60%;
+    }
+
+/* imagem */
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 25%;
+} 
+
+@media screen and (max-width:500px){
+    img{
+        width: 50%;
+        margin-top: 5%;
+    }    
+}
