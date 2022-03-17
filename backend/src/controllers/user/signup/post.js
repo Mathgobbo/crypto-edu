@@ -1,6 +1,6 @@
-module.exports.post = (request, response) => {
+module.exports.post = (req, res) => {
   //RECEBER INFORMAÇÕES DO REQUEST.BODY
   //INSERIR GURI NO BANCO
   // RETORNA USUÁRIO
-  response.send({ id: Math.random() * 1000, nome: "Matheus" });
+  res.send({ id: Math.random() * 1000, nome: "Matheus" });
 };
