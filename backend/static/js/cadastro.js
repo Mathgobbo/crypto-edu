@@ -13,7 +13,8 @@ form.addEventListener("submit", async (e) => {
     headers: { "Content-Type": "application/json" },
   });
   const json = await response.json();
-  // localStorage.setItem(json.stringify())
+  localStorage.setItem('user', JSON.stringify(json))
+  window.location.href = '/artigo'
 })
 
 
