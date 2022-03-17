@@ -1,13 +1,14 @@
+const { connectDatabase } = require("./src/services/mongodb");
 const express = require("express");
 const app = express();
 const cors = require("cors");
-
+const path = require("path");
 const router = require("./src/routes");
-const { connectDatabase } = require("./src/services/mongodb");
+
 app.use(cors());
 app.use(router);
 
-app.use(express.static("static"));
+app.use(express.static(path.join(__dirname, "/static")));
 
 async function main() {
   try {
