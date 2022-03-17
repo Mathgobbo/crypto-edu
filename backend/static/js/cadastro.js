@@ -1,17 +1,20 @@
-document.querySelector("form").addEventListener("submit", async (e) => {
-    e.preventDefault()
-    console.log(e)
-    return
-    const response = await fetch('/user/signup', {method: 'post'})
-    const json = await res.json()
+const form = document.querySelector("form");
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  let data = new FormData(form);
+  let formJson = {};
+  for (const [name, value] of data) {
+    formJson[name] = value;
+  }
+
+  const response = await fetch("/api/user/signup", {
+    method: "post",
+    body: JSON.stringify(formJson),
+    headers: { "Content-Type": "application/json" },
+  });
+  const json = await response.json();
+  // localStorage.setItem(json.stringify())
 })
-
-
-
-const user = json;
-console.log(json)
-localStorage.setItem("crypto.edu.user", JSON.stringify(user))
-const localUser = JSON.parse(localStorage.getItem("crypto.edu.user"))
 
 
 function validar() {
