@@ -24,21 +24,8 @@
       </form>
     </div>
     <div>
-      <img src="../img/cripto-img.png" />
+      <img src="../static/img/cripto-img.png" />
     </div>
-    <script src="../js/cadastro.js"></script>
-    <script>
-      document.querySelector("form").addEventListener("submit", async (e) => {
-        e.preventDefault();
-        const response = await fetch("/user/signup", { method: "POST" });
-        const json = await response.json();
-
-        const user = json;
-        console.log(json);
-        //Mostra mensagem de sucesso
-        localStorage.setItem("crypto.edu.user", JSON.stringify(user));
-        const localUser = JSON.parse(localStorage.getItem("crypto.edu.user"));
-      });
-    </script>
+    <script src="../static/js/cadastro.js"></script>
   </body>
 </html>
