@@ -1,3 +1,30 @@
+const form = document.querySelector("form");
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  let data = new FormData(form);
+  let formJson = {};
+  for (const [name, value] of data) {
+    formJson[name] = value;
+  }
+  const response = await fetch("/api/user/signin", {
+    method: "post",
+    body: JSON.stringify(formJson),
+    headers: { "Content-Type": "application/json" },
+  });
+  const json = await response.json();
+  console.log(json)
+
+  if (json.mensagem != undefined) {
+      return
+  }
+
+  localStorage.setItem('user', JSON.stringify(json))
+  window.location.href = '/artigo'
+})
+
+
+
+
 function validar() {
     var usuario = formuser.usuario.value;
     var senha = formuser.senha.value;
