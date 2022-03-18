@@ -39,8 +39,18 @@ header {
   padding: 1rem 4rem;
 }
 
+header button a {
+  text-decoration: none;
+  color: #fff;
+}
+
 header button#signin {
   border: 2px solid #282828;
+  color: #282828;
+}
+
+header button#signin a {
+  color: #282828;
 }
 
 header button#signup {
